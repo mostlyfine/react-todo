@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "server": "webpack-dev-server --hot --inline --port 8081 --watch-content-base --content-base public/ --open-page index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -15,7 +16,8 @@
     "@babel/register": "^7.6.2",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "react": "^16.11.0",
