@@ -5,9 +5,10 @@
   "author": "mostlyfine",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
     "watch": "webpack --watch",
-    "server": "webpack-dev-server --hot --inline --port 8081 --watch-content-base --content-base public/ --open-page index.html",
+    "server": "webpack-dev-server --hot --inline --port 8081 --mode=development --watch-content-base --content-base public/ --open-page index.html",
     "test": "jest --watch",
     "lint": "eslint --fix src"
   },

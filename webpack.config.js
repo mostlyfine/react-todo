@@ -20,3 +20,7 @@ module.exports = {
     ]
   }
 };
+
+if (module.exports.mode !== 'production') {
+  module.exports.devtool = 'inline-source-map';
+}
