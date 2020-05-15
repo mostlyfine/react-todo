@@ -6,22 +6,23 @@ export default class Todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tasks: ['hello','world']
-    }
+      tasks: ['hello', 'world'],
+    };
     this.handleAddTask = this.handleAddTask.bind(this);
     this.handleDeleteTask = this.handleDeleteTask.bind(this);
   }
 
+
   handleAddTask(task) {
-    if(task) {
-      const tasks = this.state.tasks;
-      this.setState({tasks: tasks.concat(task)});
+    if (task) {
+      const { tasks } = this.state;
+      this.setState({ tasks: tasks.concat(task) });
     }
   }
 
   handleDeleteTask(index) {
-    const tasks = this.state.tasks;
-    this.setState({tasks: tasks.filter((value, i, array) => i !== index)});
+    const { tasks } = this.state;
+    this.setState({ tasks: tasks.filter((value, i) => i !== index) });
   }
 
   render() {
