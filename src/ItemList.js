@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class ItemList extends React.Component {
+export class ItemList extends React.Component {
   handleDelete(i) {
     this.props.onDeleteTask(i);
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class InputForm extends React.Component {
+export class InputForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {task: ''};
@@ -35,4 +35,5 @@ export default class InputForm extends React.Component {
 
 InputForm.propTypes = {
   onAddTask:  PropTypes.func.isRequired
-};
+}
+

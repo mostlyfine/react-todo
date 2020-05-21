@@ -1,8 +1,8 @@
 import React from 'react';
-import InputForm from './InputForm';
-import ItemList from './ItemList';
+import { InputForm } from './InputForm';
+import { ItemList } from './ItemList';
 
-export default class Todo extends React.Component {
+export class Todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
